@@ -5,6 +5,7 @@ import HomeCarousel from "./components/carousel/carousel.jsx";
 import Card from "./components/Card/Card.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import AboutPage from "./components/AboutPage/AboutPage.jsx"
+import LargeCard from "./components/LargeCard/LargeCard.jsx";
 import "./App.css"
 
 
@@ -65,14 +66,14 @@ const HomePage = () => {
  {/*====================================== LARGE CARDS ===============================*/}
                 {/* Correctly placing the Large-cards-section here */}
                 <div className="Large-cards-section">
-                    <Card 
-                        icon={<img src="/assets/we-fight-togother.jpg" alt="donations icon" />}
+                    <LargeCard 
+                       imageUrl = "/assets/we-fight-togother.jpg" alt="donations icon"
                         title="WE FIGHT TOGETHER"
                         description="Humanity faces a myriad of challenges..."
                         showButton={false} 
                     />
-                    <Card 
-                        icon={<img src="/assets/we-care-about.jpg" alt="donations icon" />}
+                    <LargeCard 
+                        imageUrl ="/assets/we-care-about.jpg" alt="donations icon" 
                         title="WE CARE ABOUT OTHERS"
                         description="Our mission is to driven by commitment..."
                         showButton={false} 
