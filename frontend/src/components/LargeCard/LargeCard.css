@@ -1,0 +1,88 @@
+/*======================================== CSS FOR LARGE CARDS ===============================*/
+
+.Large-cards-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+}
+
+/* Container to hold the background image and content */
+.Large-card-container {
+    flex: 1;
+    min-width: 450px;
+    max-width: calc(50% - 15px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    height: 550px;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Bottom bar with the title (always visible) */
+.Large-card-title-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(14, 117, 227, 0.8); /* Blue with opacity */
+    color: white;
+    text-align: center;
+    z-index: 10; /* Ensure it's always on top */
+    transition: background-color 0.5s ease-in-out;
+}
+
+.Large-card-title-bar .Card-title {
+    font-size: 2.2em;
+    margin-bottom: 5px; /* Adjust spacing */
+}
+
+/* Main overlay for descriptive text on hover */
+.Large-card-hover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9); /* White with opacity */
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+}
+
+/* Descriptive text and button styling */
+.Large-card-hover-content .Card-description {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #08488c;
+    margin-bottom: 0;
+}
+
+.Large-card-hover-content button {
+    background-color: #08488c;
+    color: white;
+    height: 40px;
+    width: 100px;
+    border-radius: 5%;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Hover effect on the container */
+.Large-card-container:hover .Large-card-hover-overlay {
+    opacity: 1; /* Show the white overlay on hover */
+}
