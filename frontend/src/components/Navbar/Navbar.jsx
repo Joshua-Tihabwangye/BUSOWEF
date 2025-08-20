@@ -2,7 +2,8 @@ import React from "react";
 import { Link } from 'react-router-dom';
 
 
-function Navbar() {
+
+function Navbar({children}) {
     return(
         <header>
             <nav>
@@ -63,7 +64,11 @@ function Navbar() {
                         </div> {/* /#navbar */}
                     </div> {/* /.container */}
                 </div> {/* /.navbar-main */}
-            
+
+                <div className="main-content">
+                {children}
+                </div>
+                
             </nav>
         </header>
     );

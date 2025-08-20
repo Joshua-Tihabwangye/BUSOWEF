@@ -1,0 +1,209 @@
+/* AboutPage.css */
+
+.About-section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Updated: Style for the grouped intro section (image + text) */
+.About-intro-section {
+    display: flex;
+    gap: 30px; 
+    margin-bottom: 60px; 
+    align-items: flex-start; 
+    width: 100%; 
+     flex-wrap: wrap; 
+}
+
+.About-image-container {
+    /* Updated: Make image container take roughly half the space */
+    flex: 1; 
+    min-width: 300px; /* Ensure it doesn't get too small on larger screens */
+    max-width: calc(50% - 20px); /* Roughly 50% width minus half of the gap */
+    margin-bottom: 0;
+}
+
+.About-image-container img {
+    width: 100%;
+    height: auto; 
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding-top: 30px; /* This padding might push the image down if its container has a set height */
+    display: block;
+}
+
+.About-text-container {
+    /* Updated: Make text container take roughly half the space */
+    flex: 1; 
+    min-width: 300px; /* Ensure it doesn't get too small */
+    max-width: calc(50% - 20px); /* Roughly 50% width minus half of the gap */
+    margin-bottom: 0;
+}
+
+.About-text-container h2 {
+    font-size: 2.8em;
+    color: #333;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 5px solid #007bff;
+    border-bottom-style: double;
+}
+
+.About-text-container p {
+    font-size: 1.1em;
+    line-height: 1.2;
+    color: #084a91;
+    margin-bottom: 15px;
+    
+}
+
+/*======================= WHAT WE DO SECTION ==========*/
+.About-page-cards-section {
+   width: 100%;
+    padding-top: 3%;
+}
+.About-page-cards-section h2 {
+    font-size: 2.2em;
+    display: flex;
+    justify-content: center;
+    border-bottom: 5px solid #007bff;
+}
+.About-page-cards-section h3 {
+    font-size: 2.2em;
+    color: #ffffff;
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.About-Cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.About-Cards-container .Card {
+    min-height: 250px;
+    background-color: #007bff;
+    border: 1px solid #3e6d9b;
+    box-shadow: 0 1px 5px rgba(0,0,0.5,1.1);
+    color: rgb(255, 255, 255);
+}
+
+.About-page-cards-section .Card .Card-icon img {
+    width: 70px;
+    height: 70px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .About-intro-section {
+        flex-direction: column; /* Stack image and text vertically */
+        align-items: center; /* Center them when stacked */
+        text-align: center; /* Center text when stacked */
+    }
+
+    .About-image-container,
+    .About-text-container {
+        flex: unset; /* Reset flex properties for stacking */
+        width: 100%; /* Take full width when stacked */
+        max-width: 80%; /* Limit overall width */
+        min-width: unset; /* Remove min-width */
+    }
+
+    .About-image-container {
+        margin-bottom: 30px; /* Space below image */
+    }
+
+    .About-text-container {
+        text-align: center;
+    }
+
+    .About-text-container h2 {
+        text-align: center;
+        font-size: 2.2em;
+    }
+    .About-text-container p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 768px) {
+    .About-section {
+        padding: 40px 15px;
+    }
+    .About-page-cards-section  .Cards-grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .About-section {
+        padding: 30px 15px;
+    }
+    .About-image-container {
+        max-width: 90%;
+    }
+    .About-page-cards-section h3 {
+        font-size: 1.8em;
+    }
+}
+
+/*======================= OUR TEAM SECTION ==========*/
+.Our-Team-Cards-section {
+    width: 100%;
+    padding-top: 3%;
+}
+.Our-Team-Cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    padding-top:15px;
+
+}
+.Our-Team-Cards-section h2 {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    text-decoration:underline solid #007bff;
+}
+.Our-Team-Cards-section h3 {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+
+}
+
+/* Style the Card-icon to take full width */
+.Our-Team-Cards .Card .Card-icon {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Make the image fill the Card-icon container */
+.Our-Team-Cards-section .Our-Team-Cards .Card .Card-icon img {
+    width: 100%; /* Make the image fill the width of its container */
+    height: 200px;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 8px 8px 0 0; /* Apply border-radius to the top corners */
+}
+
+.Our-Team-Cards .Card-title {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.Our-Team-Cards .Card-description {
+    text-align: center;
+    padding: 5px 10px 10px 10px;
+    font-size: 0.9em;
+}
