@@ -1,0 +1,132 @@
+.main-footer {
+    background-color: #003366; 
+    color: #ffffff;
+    padding: 40px 0 20px 0; 
+    font-family: Arial, sans-serif; 
+}
+
+.footer-content {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    max-width: 1200px; 
+    margin: 0 auto; /* Center the content */
+    padding: 0 20px; /* Padding on sides for smaller screens */
+}
+
+.footer-section {
+    padding: 0 15px; /* Padding for individual sections */
+}
+
+.footer-section h4 {
+    font-size: 1.4em;
+    margin-bottom: 25px;
+    color: #ffffff;
+    border-bottom: 2px solid #007bff; /* Underline for titles */
+    padding-bottom: 10px;
+    display: inline-block; /* Makes border-bottom only as wide as text */
+}
+
+/* About Us Section */
+.footer-section.about-us {
+    flex: 0 0 40%; /* Take up about 40% of the width */
+    max-width: 40%;
+}
+
+.footer-section.about-us p {
+    font-size: 0.95em;
+    line-height: 1.6;
+    opacity: 0.9; /* Slightly less opaque for a softer look */
+}
+
+/* Spacer to push contact form to the right */
+.footer-spacer {
+    flex-grow: 1; /* This div will grow and push the contact form to the far right */
+}
+
+/* Contact Us Form Section */
+.footer-section.contact-us-form {
+    flex: 0 0 35%; /* Take up about 35% of the width */
+    max-width: 35%;
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form .form-control {
+    width: 100%; 
+    padding: 10px 15px;
+    border: 1px solid #0056b3; /* Slightly lighter border */
+    background-color: #004080; /* Darker background for inputs */
+    color: #ffffff; /* White text in inputs */
+    border-radius: 4px;
+    font-size: 1em;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.contact-form .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Lighter placeholder text */
+}
+
+.send-message-btn {
+    background-color: #007bff; /* Blue button */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+    width: auto; /* Allow button to size based on content */
+    display: block; /* Make it a block element to take full width if needed */
+}
+
+.send-message-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1); /* Light separator line */
+    font-size: 0.85em;
+    opacity: 0.8;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; /* Stack sections vertically on small screens */
+        align-items: center; /* Center items when stacked */
+        text-align: center;
+    }
+
+    .footer-section.about-us,
+    .footer-section.contact-us-form {
+        flex: 0 0 100%; /* Take full width */
+        max-width: 100%;
+        margin-bottom: 30px; /* Space between stacked sections */
+    }
+
+    .footer-spacer {
+        display: none; /* Hide spacer when stacking */
+    }
+
+    .footer-section h4 {
+        margin-bottom: 15px; /* Less margin below titles when stacked */
+    }
+
+    .send-message-btn {
+        width: 100%; /* Full width button on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .main-footer {
+        padding: 30px 0 15px 0;
+    }
+}
