@@ -17,7 +17,6 @@
     min-width: 450px;
     max-width: calc(50% - 15px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    border-radius: 8px;
     position: relative;
     overflow: hidden;
     height: 550px;
@@ -42,6 +41,7 @@
 .Large-card-title-bar .Card-title {
     font-size: 2.2em;
     margin-bottom: 5px; /* Adjust spacing */
+    font-family: 'Georgia', serif; 
 }
 
 /* Main overlay for descriptive text on hover */
@@ -60,6 +60,7 @@
     align-items: center;
     padding: 30px;
     text-align: center;
+    font-family: 'Verdana', sans-serif;
 }
 
 /* Descriptive text and button styling */
@@ -68,6 +69,7 @@
     line-height: 1.6;
     color: #08488c;
     margin-bottom: 0;
+   text-align: center;
 }
 
 .Large-card-hover-content button {
