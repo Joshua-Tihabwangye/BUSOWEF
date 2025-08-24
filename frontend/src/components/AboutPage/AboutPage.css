@@ -8,7 +8,15 @@
     flex-direction: column;
     align-items: center;
 }
-
+.About-section .Card {
+    border: 1px solid #ccc;
+    width: 270px; /* Or adjust as needed */
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    background-color:#0e75e3;
+    color: white;
+    
+}
 /* Updated: Style for the grouped intro section (image + text) */
 .About-intro-section {
     display: flex;
@@ -41,19 +49,14 @@
     min-width: 300px; /* Ensure it doesn't get too small */
     max-width: calc(50% - 20px); /* Roughly 50% width minus half of the gap */
     margin-bottom: 0;
-}
-
-.About-text-container h2 {
-    font-size: 2.8em;
-    color: #333;
-    margin-bottom: 25px;
-    display: flex;
-    justify-content: center;
-    border-bottom: 5px solid #007bff;
-    border-bottom-style: double;
      font-family: 'Georgia', serif; 
 }
-
+.About-text-container h2 {
+     font-family: 'Georgia', serif;
+     text-align: center;
+     text-decoration: underline double 2px  #084a91;;
+     padding-bottom: 2%;
+}
 .About-text-container p {
     font-size: 1.1em;
     line-height: 1.2;
@@ -78,9 +81,20 @@
     font-size: 2.2em;
     color: #ffffff;
     margin-bottom: 30px;
-    display: flex;
 }
-
+.About-page-cards-section .Card button {
+    background-color: #08488c;
+    color: white;
+    height: 40px;
+    width: 100px;
+    border-radius: 5%;
+    font-weight: bold
+}
+.About-page-cards-section .Card button:hover {
+    background-color: #ffffff;
+    color: #08488c;
+    
+}
 .About-Cards-container {
     display: flex;
     flex-wrap: wrap;
@@ -186,17 +200,13 @@
 /* Style the Card-icon to take full width */
 .Our-Team-Cards .Card .Card-icon {
     width: 100%;
-    overflow: hidden;
-    border-radius: 8px 8px 0 0;
+    height: 200px;
 }
 
 /* Make the image fill the Card-icon container */
 .Our-Team-Cards-section .Our-Team-Cards .Card .Card-icon img {
     width: 100%; /* Make the image fill the width of its container */
     height: 200px;
-    object-fit: cover;
-    overflow: hidden;
-    border-radius: 8px 8px 0 0; /* Apply border-radius to the top corners */
 }
 
 .Our-Team-Cards .Card-title {

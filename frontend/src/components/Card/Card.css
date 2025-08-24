@@ -3,13 +3,13 @@
 .Home-page-content {
     padding: 20px;
 }
-.Cards-section {
+.Impact-Cards-section {
     display: flex; /* Or grid, for layout */
     flex-wrap: wrap; /* Allow cards to wrap */
     gap: 20px; /* Space between cards */
     justify-content: center;
 }
-.Card {
+.Impact-Cards-section .Card {
     border: 1px solid #ccc;
     padding: 15px;
     width: 270px; /* Or adjust as needed */
@@ -19,7 +19,16 @@
     color: white;
     
 }
-.Card button {
+.Our-impact .Card{
+    border: 1px solid #ccc;
+    padding: 15px;
+    width: 280px; /* Or adjust as needed */
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    background-color:#0e75e3;
+    color: white;
+}
+.Impact-Cards-section .Card button {
     background-color: #08488c;
     color: white;
     height: 40px;
@@ -27,7 +36,7 @@
     border-radius: 5%;
     font-weight: bold
 }
-.Card button:hover {
+.Impact-Cards-section .Card button:hover {
     color: #0e75e3;
     background-color:white;
     height: 40px;
@@ -43,8 +52,9 @@
     padding: 2%;
     text-align: center;
     text-decoration: underline 5px solid rgb(15, 87, 243);
+     font-family: 'Georgia', serif; 
 }
-.Card p{
+.Impact-Cards-section .Card p{
     padding-bottom: 10px;
 }
 
@@ -60,7 +70,6 @@
     background-color: white;
     color: black;
     border: 1px solid #201bba;
-    padding: 15px;
     width: 280px; /* Or adjust as needed */
     box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
     text-align: center;
@@ -72,8 +81,24 @@
 .Our-causes-card-section .Card-icon img {
     width: 100%; /* Size for your icon */
     height: 200px;
+
 }
-.Our-causes h3{
+.Our-causes-card-section .Card button {
+   background-color: #08488c;
+    color: white;
+    height: 40px;
+    width: 100px;
+    border-radius: 5%;
+    font-weight: bold;
+    padding: 3%;
+}
+
+.Our-causes-card-section .Card p{
+    padding-bottom: 10px;
+}
+.Our-causes h2{
     padding: 3%;
     text-align: center;
+    text-decoration:underline 2px double #004080;
+     font-family: 'Georgia', serif; 
 }

@@ -36,7 +36,7 @@ const HomePage = () => {
 {/*====================================== OUR IMPACT AREAS CARDS ===============================*/}
        <div className="Our-impact">
           <h2>Our Impact Areas</h2>
-          <div className="Cards-section">
+          <div className="Impact-Cards-section">
             {/* These will still have buttons because showButton defaults to true */}
             <Card  
               icon={<img src="/assets/our-mission-icon.png" alt="donations icon" />}
@@ -67,22 +67,31 @@ const HomePage = () => {
                 {/* Correctly placing the Large-cards-section here */}
                 <div className="Large-cards-section">
                     <LargeCard 
-                       imageUrl = "/assets/we-fight-togother.jpg" alt="donations icon"
+                        imageUrl="/assets/we-fight-together.jpg" // Corrected typo and syntax
                         title="WE FIGHT TOGETHER"
-                        description="Humanity faces a myriad of challenges..."
                         showButton={false} 
-                    />
+                    >
+                        {/* Pass the paragraphs as children here */}
+                        <p>Humanity faces a myriad of challenges, from the pervasive grip of poverty and the devastating impact of disease to the urgent need for environmental sustainability and the pursuit of social justice. </p>
+                        <p>No single individual or isolated effort can hope to overcome these deeply entrenched issues alone. It is in our collective strength, in our unified purpose and unwavering solidarity, that we find the true power to enact meaningful and lasting change. </p>
+                        <p> "We Fight Together" is not merely a slogan; it is the very foundation upon which our organization is built. We believe that by forging strong partnerships with individuals, communities, other organizations, and dedicated volunteers, we can amplify our impact and reach those who need us most.</p>
+                    </LargeCard>
+
                     <LargeCard 
-                        imageUrl ="/assets/we-care-about.jpg" alt="donations icon" 
+                        imageUrl="/assets/we-care-about.jpg" 
                         title="WE CARE ABOUT OTHERS"
-                        description="Our mission is to driven by commitment..."
-                        showButton={false} 
-                    />
+                        showButton={false}
+                    >
+                        {/* You can add similar paragraphs for this card */}
+                        <p>At the core of our organization's mission lies a profound and unwavering commitment to the well-being of others. "We Care About Others" is not just a statement; it is the guiding principle that informs every decision we make and every action we undertake.</p>
+                        <p>It is born from a deep-seated belief in the inherent dignity and value of every human life, regardless of circumstance, background, or location.</p>
+                        <p>Compassion is the bedrock of our work, driving us to reach out to those facing hardship, to offer solace in times of crisis, and to empower individuals to build brighter futures for themselves and their communities.</p>
+                    </LargeCard>
                 </div>
 
 {/*=====================================OUR CAUSES  CARDS ===============================*/}
         <div className="Our-causes"> 
-          <h3>OUR CAUSES</h3>
+          <h2>OUR CAUSES</h2>
           <div className="Our-causes-card-section">
             
             <Card
