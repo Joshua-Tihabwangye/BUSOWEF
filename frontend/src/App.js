@@ -6,6 +6,7 @@ import Card from "./components/Card/Card.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import AboutPage from "./components/AboutPage/AboutPage.jsx"
 import LargeCard from "./components/LargeCard/LargeCard.jsx";
+import ContactPage from "./components/ContactPage/ContactPage.jsx";
 import "./App.css"
 
 
@@ -129,7 +130,6 @@ const HomePage = () => {
   );
 };
 
-const ContactUs = () => <div>Contact Us Page Content</div>;
 const Causes = () => <div>Causes Page Content</div>;
 const Gallery = () => <div>Gallery Page Content</div>;
 
@@ -141,7 +141,7 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />
-            <Route path="/contact" element={<ContactUs />} />
+            <Route path="/contact" element={<ContactPage />} />
             <Route path="/causes" element={<Causes />} />
             <Route path="/gallery" element={<Gallery />} />
           </Routes>
