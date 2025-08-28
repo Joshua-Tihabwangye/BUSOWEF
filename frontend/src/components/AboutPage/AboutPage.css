@@ -85,8 +85,7 @@
 .About-page-cards-section .Card button {
     background-color: #08488c;
     color: white;
-    height: 40px;
-    width: 100px;
+    padding: 10px 20px;
     border-radius: 5%;
     font-weight: bold
 }
@@ -218,4 +217,49 @@
     text-align: center;
     padding: 5px 10px 10px 10px;
     font-size: 0.9em;
+}
+
+/* Styling for the image banner at the top */
+.About-us-image-container {
+  /* This is the parent container. It is a reference point for the absolute-positioned children. */
+  position: relative; 
+  width: 100%;
+  height: 300px; /* Adjust height as needed */
+  overflow: hidden;
+  display: flex; /* Use flexbox to easily center the text */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white; /* Ensures the text is visible on the image */
+  background-color: rgba(0, 0, 0, 0.5); /* Adds a dark overlay for better text readability */
+}
+
+.About-us-image-container img {
+  /* This makes the image fill the container entirely. */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Puts the image behind the text */
+}
+
+/* Styles for the text on the image */
+.About-us-image-container h3 {
+  /* Your existing h3 styles */
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 10;
+  text-decoration:underline 2px solid white ;
+  text-underline-offset: 5px;
+  font-family: "Cinzel", serif;;
+ 
+}
+
+.About-us-image-container h6 {
+  /* Your existing h6 styles */
+  font-size: 18px;
+  font-weight: normal;
 }
