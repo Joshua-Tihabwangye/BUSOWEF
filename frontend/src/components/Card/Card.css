@@ -31,16 +31,14 @@
 .Impact-Cards-section .Card button {
     background-color: #08488c;
     color: white;
-    height: 40px;
-    width: 100px;
+    padding: 10px 20px;
     border-radius: 5%;
     font-weight: bold
 }
 .Impact-Cards-section .Card button:hover {
     color: #0e75e3;
     background-color:white;
-    height: 40px;
-    width: 100px;
+    padding: 10px 20px;
 }
 
 
@@ -52,7 +50,7 @@
     padding: 2%;
     text-align: center;
     text-decoration: underline 5px solid rgb(15, 87, 243);
-     font-family: 'Georgia', serif; 
+    font-family: 'Georgia', serif; 
 }
 .Impact-Cards-section .Card p{
     padding-bottom: 10px;
